@@ -1,12 +1,19 @@
 {
-	"name": "@tristancamejo/typescript-lib",
-	"version": "1.0.0",
+	"name": "cheeze.js",
+	"version": "0.0.2",
 	"license": "Apache-2.0",
 	"contributors": [
 		"Tristan <contact@tristancamejo.com>"
 	],
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/twisttaan/cheeze.js.git"
+	},
+	"files": [
+		"dist"
+	],
 	"scripts": {
 		"build": "tsc -b src && rollup -c scripts/rollup.bundle.ts && gen-esm-wrapper dist/index.js dist/index.mjs",
 		"commit": "git-cz",
@@ -36,6 +43,7 @@
 		"@sapphire/prettier-config": "^1.4.3",
 		"@sapphire/ts-config": "^3.3.4",
 		"@types/node": "^17.0.30",
+		"discord.js": "^14.5.0",
 		"eslint": "^8.14.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-prettier": "^4.0.0",

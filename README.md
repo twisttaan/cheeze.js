@@ -1,9 +1,7 @@
-# typescript lib template
+# cheeze.js
 
-## features
+> The unofficial cheeze JavaScript wrapper.
 
-* typescript (i think)
-* github action stuff
-* yarn 3 too
+## Supported Features
 
-thanks for reading 😘
+-   Math.

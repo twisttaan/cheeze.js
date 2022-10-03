@@ -13,7 +13,7 @@ on:
       repository:
         description: The {owner}/{repository} that is being deployed.
         required: false
-        default: username/repo
+        default: twisttaan/cheeze.js
   push:
     branches:
       - main
@@ -27,7 +27,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
-          repository: ${{ github.event.inputs.repository || 'username/repo' }}
+          repository: ${{ github.event.inputs.repository || 'twisttaan/cheeze.js' }}
           ref: ${{ github.event.inputs.ref || 'main' }}
       - name: Use Node.js v16
         uses: actions/setup-node@v3
